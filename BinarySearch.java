@@ -20,4 +20,16 @@ public class BinarySearch {
         return -1;
     }
 
+    /*
+     * Python implementation def binSearch(arr,l,r,t): if r >= l: mid = l+(l-r) // 2
+     * 
+     * if arr[mid] == t : return mid
+     * 
+     * elif arr[mid] > t : return binSearch(arr,l,mid-1,t)
+     * 
+     * else: return binSearch(arr,mid+1,r,t)
+     * 
+     * return -1
+     */
+
 }
