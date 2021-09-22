@@ -1,5 +1,7 @@
 public class BinarySearch {
 
+    // O(log N) Time Complexity and O(log N) Space in the recursive approach, O(1)
+    // in iterative one
     public static int binSearch(int[] array, int left, int right, int target) {
         if (right >= left) {
 
