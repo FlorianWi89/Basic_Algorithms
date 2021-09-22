@@ -23,9 +23,10 @@ public class SelectionSort {
     }
 
     /*
-     * Implementation in Python def selectionSort(array): for i in
-     * range(len(array)): minIndex=i for j in range(i+1,len(array)): if
-     * array[minIndex] > array[j]: minIndex=j
+     * Implementation in Python
+     * 
+     * def selectionSort(array): for i in range(len(array)): minIndex=i for j in
+     * range(i+1,len(array)): if array[minIndex] > array[j]: minIndex=j
      * 
      * array[i], array[minIndex] = array[minIndex], array[i]
      */
