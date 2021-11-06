@@ -1,5 +1,6 @@
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class DFS {
 
@@ -45,7 +46,29 @@ public class DFS {
         }
 
         // iterative DFS using a stack
+        public void DFS_iterative(int root) {
+            LinkedList<Boolean> visited = new LinkedList<>();
+            for (int i = 0; i < V; i++)
+                visited.add(false);
 
+            Stack<Integer> stack = new Stack<>();
+            stack.push(root);
+
+            while (!stack.isEmpty()) {
+                root = stack.pop();
+
+                if (visited.get(root) == false) {
+                    System.out.println(root);
+                    visited.set(root, true);
+                }
+                Iterator<Integer> iter = adj[root].iterator();
+                while (iter.hasNext()) {
+                    int v = iter.next();
+                    if (!visited.get(v))
+                        stack.push(v);
+                }
+            }
+        }
     }
 
 }
